@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",    // Uruchamia build przed publikacją
-    "deploy": "gh-pages -d dist"    // Publikuje zawartość folderu dist
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.2",
@@ -34,5 +34,5 @@
     "tailwindcss": "^4.0.3",
     "vite": "^6.0.5"
   },
-  "homepage": "https://username.github.io/repository-name"  // Podaj swój adres GitHub Pages
+  "homepage": "https://username.github.io/repository-name"
 }

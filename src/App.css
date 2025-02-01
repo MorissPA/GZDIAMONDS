@@ -51,3 +51,10 @@ body {
 * {
   caret-color: transparent;
 }
+/* Wyłączenie animacji na urządzeniach mobilnych */
+@media (max-width: 900px) {
+  .animate-slideInUp,
+  .animate-slideInLeft {
+    animation: none !important;
+  }
+}

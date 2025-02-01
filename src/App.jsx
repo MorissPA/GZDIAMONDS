@@ -8,6 +8,9 @@ import Gallery from './components/Gallery';
 import WhyUs from './components/WhyUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   const [isAnimated, setIsAnimated] = useState(false);

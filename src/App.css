@@ -5,7 +5,10 @@ html {
 @theme {
   --color-gold: #D4AF37;
   --color-gold-light: #FFD700;
+  --color-yblue: #000000;
 }
+
+
 
 /* Animacja slideInUp */
 @keyframes slideInUp {

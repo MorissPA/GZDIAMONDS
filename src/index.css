@@ -3,74 +3,39 @@
 html {
   scroll-behavior: smooth;
 }
+@layer utilities {
+  .text-shadow-light-gold {
+    text-shadow: 1px 1px 1px rgba(112, 98, 19, 0.5);
+  }
+  .shadow-light-gold {
+    box-shadow: 1px 2px 2px rgba(124, 107, 11, 0.5);
+  }
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('/fonts/LibreBaskerville-Regular.woff2') format('woff2'),
+       url('/fonts/LibreBaskerville-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme {
   --color-gold: #D4AF37;
   --color-gold-light: #FFD700;
+  --color-yblue: #000000;
+  --font-libre-baskerville: 'Libre Baskerville', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-/* Animacja slideInUp */
-@keyframes slideInUp {
-  0% {
-    transform: translateY(30px); /* Mniejsze przesunięcie */
-    opacity: 1; /* Ustawiamy pełną przezroczystość na początku */
-  }
-  100% {
-    transform: translateY(0); /* Końcowa pozycja */
-    opacity: 1; /* Utrzymujemy pełną widoczność przez całą animację */
-  }
-}
 
-/* Animacja slideInLeft */
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-30px); /* Mniejsze przesunięcie */
-    opacity: 1; /* Ustawiamy pełną przezroczystość na początku */
-  }
-  100% {
-    transform: translateX(0); /* Końcowa pozycja */
-    opacity: 1; /* Utrzymujemy pełną widoczność przez całą animację */
-  }
-}
-
-/* Animacja fadeIn */
-@keyframes fadeIn {
-  0% {
-    opacity: 1; /* Ustawiamy pełną przezroczystość na początku */
-  }
-  100% {
-    opacity: 1; /* Końcowy stan: pełna widoczność */
-  }
-}
-
-/* Klasy do animacji */
-.animate-slideInUp {
-  animation: slideInUp 0.7s ease-out;
-}
-
-.animate-slideInLeft {
-  animation: slideInLeft 0.7s ease-out;
-}
-
-.animate-fadeIn {
-  animation: fadeIn 1s ease-in forwards;
-}
-
-/* app.css */
+/* Globalne style */
 body {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
+  font-family: var(--font-libre-baskerville);
+
 }
 
 * {
   caret-color: transparent;
 }
-/* Wyłączenie animacji na urządzeniach mobilnych */
-@media (max-width: 768px) {
-  .animate-slideInUp,
-  .animate-slideInLeft {
-    animation: none !important;
-  }
-}
+

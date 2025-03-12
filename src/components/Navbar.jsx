@@ -25,7 +25,7 @@ const Navbar = ({ onLinkClick }) => {
   };
 
   return (
-    <nav className={`p-4 fixed top-0 left-0 w-full z-50 transition-all duration-1000 ${isTransparent ? 'bg-transparent text-gold border-transparent' : 'bg-yblue text-gold border-b border-gold-dark'}`}>
+    <nav className={` p-4 fixed top-0 left-0 w-full z-50 transition-all duration-1000 ${isTransparent ? 'bg-transparent text-gold border-transparent' : 'bg-yblue text-gold border-b border-gold-dark'}`}>
       <div className="container mx-auto flex justify-between items-center relative">
         {/* Logo i nazwa */}
         <a href="#home" className="flex items-center space-x-3">
@@ -35,7 +35,7 @@ const Navbar = ({ onLinkClick }) => {
             className="h-10 w-auto"
           />
           <div className="text-gold font-bold leading-tight text-center">
-            GZ DIAMONDS
+           
           </div>
         </a>
 
@@ -55,11 +55,11 @@ const Navbar = ({ onLinkClick }) => {
               : "hidden lg:flex"
           }`}
         >
-          <li><a href="#about" onClick={() => handleLinkClick('about')} className="hover:text-gold-light">O nas</a></li>
-          <li><a href="#process" onClick={() => handleLinkClick('process')} className="hover:text-gold-light">Proces tworzenia</a></li>
-          <li><a href="#gallery" onClick={() => handleLinkClick('gallery')} className="hover:text-gold-light">Galeria</a></li>
-          <li><a href="#approach" onClick={() => handleLinkClick('approach')} className="hover:text-gold-light">Dlaczego my?</a></li>
-          <li><a href="#contact" onClick={() => handleLinkClick('contact')} className="hover:text-gold-light">Kontakt</a></li>
+          <li><a href="#about" onClick={() => handleLinkClick('about')} className=" hover:text-gold-light italic">O nas</a></li>
+          <li><a href="#process" onClick={() => handleLinkClick('process')} className="hover:text-gold-light italic">Proces tworzenia</a></li>
+          <li><a href="#gallery" onClick={() => handleLinkClick('gallery')} className="hover:text-gold-light italic">Galeria</a></li>
+          <li><a href="#approach" onClick={() => handleLinkClick('approach')} className="hover:text-gold-light italic">Dlaczego my</a></li>
+          <li><a href="#contact" onClick={() => handleLinkClick('contact')} className="hover:text-gold-light italic">Kontakt</a></li>
         </ul>
       </div>
     </nav>

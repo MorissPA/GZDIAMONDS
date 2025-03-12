@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <div className="bg-yblue text-shadow-light-gold ">
+    <div className="bg-yblue text-shadow-light-gold">
       <Navbar onLinkClick={handleLinkClick}></Navbar>
       <Home />
       <About />

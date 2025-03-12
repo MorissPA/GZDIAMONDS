@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="w-full h-screen flex items-center justify-center font-serif bg-blue-50 relative overflow-hidden"
+      className="w-full h-screen flex items-center justify-center bg-blue-50 relative overflow-hidden"
       style={{
         backgroundImage: 'url(./image/footer_background.jpg)',
         backgroundSize: 'cover',
